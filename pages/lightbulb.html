@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light Bulb</title>
+    <link rel="stylesheet" href="../CSS/lightbulb.css">
+  </head>
+<body>
+<h1>light bulb</h1>
+<img id="myImage" onclick="changeImage()" src="../assets/pic_bulboff.gif">
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "../assets/pic_bulboff.gif";
+  } else {
+    image.src = "../assets/pic_bulbon.gif";
+  }
+}
+</script>
+
+</body>
+</html>
+
